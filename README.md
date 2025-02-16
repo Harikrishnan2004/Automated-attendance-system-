@@ -1,24 +1,27 @@
-**Face Recognition and Attendance System**
+## Face Recognition and Attendance System**
 
-**Overview**
+## Overview
 
 This project implements a face recognition and attendance system using deep learning models. It extracts faces from group photos, converts them into embeddings using FaceNet, and compares them with stored embeddings to identify individuals and mark attendance.
 
-**Features**
+## Features
 
-Detects faces in a group photo using MTCNN.
+## Face Recognition Process
 
-Extracts individual faces from the group photo.
+- **Face Detection**
+  - Uses MTCNN to detect faces in a group photo.
+  - Extracts individual faces from the detected regions.
 
-Converts extracted faces into embeddings using FaceNet.
+- **Face Recognition**
+  - Converts extracted faces into embeddings using FaceNet.
+  - Compares embeddings with a predefined database.
+  - Determines if a person is present based on a distance threshold.
 
-Compares embeddings with a predefined database of known individuals.
+- **Output**
+  - Displays extracted faces.
+  - Shows recognized individuals with their names.
 
-Determines if a person is present in the group photo based on a distance threshold.
-
-Displays extracted faces and recognized individuals.
-
-Prerequisites
+**Prerequisites**
 
 Before running the project, ensure you have the following dependencies installed:
 
